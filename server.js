@@ -5,6 +5,7 @@ const connect = require('knex');
 const cors = require('cors');
 app.use(bodyParser.json());
 app.use(cors());
+app.options('*', cors());
 
 const postgres = connect({
 
